@@ -1,0 +1,127 @@
+body {
+  background-color: #991b2a;
+}
+
+a {
+  text-decoration: none;
+}
+
+.about-soundify {
+  font-weight: bold;
+}
+
+.about-soundify:hover > span.dashed-underline {
+  border-bottom: 2px dashed #ddd;
+}
+
+.container {
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 450px;
+}
+
+.logo {
+  width: 95%;
+}
+.logo-text {
+  width: 80%;
+}
+
+#dropArea {
+  width: 100%;
+  border: 4px dashed #ddd;
+  border-radius: 3px;
+  min-height: 250px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+}
+
+#dropArea > * {
+  margin-bottom: 15px;
+}
+
+#dropArea input {
+  position: absolute;
+  width: 100%;
+  min-height: 250px;
+  opacity: 0;
+}
+
+#dropArea .mp3 {
+  width: 70px;
+}
+
+textarea {
+  min-height: 160px;
+  background-color: #fff !important;
+}
+
+.question-mark {
+  background-color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #aa1f2f;
+  font-weight: bold;
+}
+
+.form-control:focus {
+  border-color: #440c12;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(68, 12, 18, 0.6);
+}
+
+button {
+  z-index: 1000;
+}
+
+.btn-select-file {
+  background-color: #f6e8ea;
+  color: #212529;
+}
+
+.btn-select-file:hover {
+  background-color: #440c12;
+  color: #fefefe;
+}
+
+.btn-secondary-action {
+  background-color: #440c12;
+  color: #fefefe;
+}
+
+.btn-secondary-action:hover {
+  background-color: #bb4b58;
+}
+
+a {
+  color: #6c757d;
+}
+
+@media (max-width: 768px) {
+  div[class^="row"] {
+    padding-left: 11px;
+    padding-right: 11px;
+  }
+  div[class^="col"] {
+    padding: 4px;
+  }
+}
+
+@media (min-width: 768px) {
+  div[class^="container"] {
+    margin-top: 30px;
+  }
+  div[class^="col"] {
+    padding: 4px;
+  }
+}
