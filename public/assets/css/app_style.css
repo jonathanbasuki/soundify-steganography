@@ -1,0 +1,154 @@
+:root {
+  --primary-color: #153448;
+  --secondary-color: #3b3486;
+  --text-color: #efecec;
+  --cta-color: #864af9;
+}
+
+body {
+  background-color: var(--primary-color);
+}
+
+a,
+p,
+span,
+.text-color {
+  color: var(--text-color) !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+.active-link {
+  font-weight: bold;
+  border-bottom: 2px solid var(--text-color);
+}
+
+.header-link:hover {
+  font-weight: bold;
+}
+
+.about-soundify {
+  color: var(--text-color) !important;
+  font-weight: bold;
+}
+
+.about-soundify:hover > span.dashed-underline {
+  border-bottom: 2px solid var(--text-color);
+}
+
+.maintenance-soundify {
+  font-weight: bold;
+  border-bottom: 2px solid var(--text-color);
+
+}
+
+.container {
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 450px;
+}
+
+.logo {
+  width: 95%;
+}
+.logo-text {
+  width: 80%;
+}
+
+#dropArea {
+  width: 100%;
+  border: 4px dashed var(--text-color);
+  border-radius: 3px;
+  min-height: 250px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+  background-color: var(--primary-color) !important;
+}
+
+#dropArea > * {
+  margin-bottom: 15px;
+}
+
+#dropArea input {
+  position: absolute;
+  width: 100%;
+  min-height: 250px;
+  opacity: 0;
+}
+
+#dropArea .mp3 {
+  width: 70px;
+}
+
+textarea {
+  min-height: 160px;
+  background-color: #fff !important;
+}
+
+.question-mark {
+  background-color: #dc5f00;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #eee !important;
+  font-weight: bold;
+}
+
+.form-control:focus {
+  border-color: var(--cta-color);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(68, 12, 18, 0.6);
+}
+
+button {
+  z-index: 1000;
+}
+
+.btn-select-file {
+  background-color: var(--cta-color);
+  color: var(--text-color);
+}
+
+.btn-select-file:hover {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+.btn-secondary-action {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+.btn-secondary-action:hover {
+  background-color: var(--cta-color);
+}
+
+@media (max-width: 768px) {
+  div[class^="row"] {
+    padding-left: 11px;
+    padding-right: 11px;
+  }
+  div[class^="col"] {
+    padding: 4px;
+  }
+}
+
+@media (min-width: 768px) {
+  div[class^="container"] {
+    margin-top: 30px;
+  }
+  div[class^="col"] {
+    padding: 4px;
+  }
+}

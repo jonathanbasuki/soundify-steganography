@@ -1,0 +1,52 @@
+:root {
+  --primary-color: #153448;
+  --secondary-color: #3b3486;
+  --text-color: #efecec;
+  --secondary-text-color: #c7c8cc;
+  --cta-color: #864af9;
+}
+
+.table > :not(caption) > * > * {
+  background-color: var(--primary-color) !important;
+  color: var(--secondary-text-color) !important;
+}
+
+.btn-table {
+  background-color: var(--cta-color);
+  color: var(--text-color);
+}
+
+.btn-table:hover {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+th[scope=row], td {
+  padding: 1rem 0 !important;
+}
+
+.status {
+  padding: 0.4rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-size: .8rem;
+  background-color: var(--secondary-color);
+}
+
+/* .status.delivered {
+  background-color: #86e49d;
+  color: #006b21;
+}
+
+.status.cancelled {
+  background-color: #d893a3;
+  color: #b30021;
+}
+
+.status.pending {
+  background-color: #ebc474;
+}
+
+.status.shipped {
+  background-color: #6fcaea;
+} */

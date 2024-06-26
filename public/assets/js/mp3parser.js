@@ -85,3 +85,4 @@ function MP3Parser(arrayBuffer) {
         return buffer;
     };
 }
+

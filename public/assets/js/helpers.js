@@ -21,7 +21,7 @@ function checkPassword(str) {
 
 function enableHoverEffects() {
     var e = document.getElementById("dropArea");
-    e.ondragover = function () { e.style.borderColor = "#440c12"; };
+    e.ondragover = function () { e.style.borderColor = "#864af9"; };
     e.ondragleave = function () { e.style.borderColor = "#ddd"; };
     e.ondrop = function () { e.style.borderColor = "#ddd"; };
 }

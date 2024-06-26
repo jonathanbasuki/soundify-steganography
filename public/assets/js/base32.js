@@ -1,17 +1,11 @@
-/*
- * Modified Base32 encoding without padding.
- */
 var Base32 = {
-
     encode: function (input) {
-
         var arr = [];
         var chr1, chr2, chr3, chr4, chr5;
         var enc1, enc2, enc3, enc4, enc5, enc6, enc7, enc8;
         var i = 0;
 
         while (i < input.length) {
-
             chr1 = input[i++];
             chr2 = input[i++];
             chr3 = input[i++];
@@ -46,14 +40,12 @@ var Base32 = {
     },
 
     decode: function (input) {
-
         var arr = [];
         var chr1, chr2, chr3, chr4, chr5;
         var enc1, enc2, enc3, enc4, enc5, enc6, enc7, enc8;
         var i = 0;
 
         while (i < input.length) {
-
             enc1 = input[i++];
             enc2 = input[i++];
             enc3 = input[i++];
